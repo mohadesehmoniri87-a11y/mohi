@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0a3d62, #1e90ff);
+  color: #ffffff;
+  line-height: 2;
+}
+
+/* ---------- صفحه ورود ---------- */
+.intro-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-card {
+  background: rgba(0, 40, 80, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.skill,
+.tech {
+  font-size: 1rem;
+}
+
+.enter-title {
+  color: #6dd5fa;
+  margin-top: 20px;
+}
+
+.enter-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0a3d62;
+  background: #6dd5fa;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* ---------- منو ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 30, 60, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h1 {
+  text-align: center;
+  color: #6dd5fa;
+}
+
+.section h2 {
+  margin-top: 30px;
+  color: #aeefff;
+}
+
+/* ---------- ریسپانسیو ---------- */
+@media (max-width: 600px) {
+  .intro-card {
+    padding: 25px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.waves-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: auto;
+  left: 0;
+  animation: waveLoop linear infinite;
+}
+
+.wave path {
+  fill: rgba(0, 170, 240, 0.25);
+}
+
+/* لایه‌ها */
+.wave1 { top: 5%;  animation-duration: 18s; }
+.wave2 { top: 20%; animation-duration: 25s; opacity: 0.3; }
+.wave3 { top: 35%; animation-duration: 32s; opacity: 0.25; }
+.wave4 { top: 50%; animation-duration: 40s; opacity: 0.2; }
+.wave5 { top: 65%; animation-duration: 50s; opacity: 0.16; }
+.wave6 { top: 78%; animation-duration: 60s; opacity: 0.12; }
+.wave7 { top: 90%; animation-duration: 70s; opacity: 0.08; }
+
+@keyframes waveLoop {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.creature {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.creatures-img {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 20px;
+}
