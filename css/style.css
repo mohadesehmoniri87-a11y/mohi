@@ -139,16 +139,11 @@ body {
   border-radius: 20px;
 }
 
-@media (max-width: 768px) {
-
-  body {
-    font-size: 18px;
-  }
-
+@media (max-width: 600px) {
   .intro-card {
-    width: 90%;
+    width: 95%;
+    max-width: none;
     padding: 30px 20px;
-    border-radius: 18px;
   }
 
   .name {
@@ -167,13 +162,11 @@ body {
   .enter-link {
     font-size: 1.1rem;
     padding: 12px 28px;
-  }
-}
+    
 
-@media (max-width: 768px) {
-
+@media (max-width: 600px) {
   .navbar {
-    padding: 18px 10px;
+    padding: 20px 10px;
   }
 
   .navbar a {
@@ -182,11 +175,18 @@ body {
     margin: 8px;
   }
 }
+  }
+}
 
-@media (max-width: 768px) {
 
-  .section {
-    padding: 40px 15px;
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .section p {
+    font-size: 1.05rem;
+    line-height: 2.2;
   }
 
   .section h1 {
@@ -195,10 +195,5 @@ body {
 
   .section h2 {
     font-size: 1.3rem;
-  }
-
-  .section p {
-    font-size: 1.05rem;
-    line-height: 2;
   }
 }
